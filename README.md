@@ -35,7 +35,7 @@ python -m uvicorn main:app --host 127.0.0.1 --port 8000
 Visit `http://localhost:8000`.
 
 Note:
-- Don't use `--reload` on Windows — it can crash with a multiprocessing permission error.
+- Don't use `--reload` on Windows, it can crash with a multiprocessing permission error.
 
 ### 4. Try it
 
