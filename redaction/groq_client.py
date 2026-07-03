@@ -1,8 +1,11 @@
 import json
+import logging
 import os
 from typing import Any, Dict, List
 
 from groq import Groq
+
+logger = logging.getLogger(__name__)
 
 
 class RateLimitedError(Exception):
@@ -200,6 +203,7 @@ def _call_tool(system_prompt: str, user_content: str, tool: Dict[str, Any], tool
             raise RateLimitedError(
                 "The AI service is temporarily rate-limited. Please wait a moment and try again."
             ) from exc
+        logger.error("Groq API call failed: %s: %s", type(exc).__name__, exc)
         raise AIProcessingError(
             "The AI service failed to process this transcript. Please try again."
         ) from exc
