@@ -34,20 +34,17 @@ python -m uvicorn main:app --host 127.0.0.1 --port 8000
 
 Visit `http://localhost:8000`.
 
-Notes:
-- Use `python -m uvicorn`, not a bare `uvicorn` command — this works regardless of whether
-  uvicorn's script is on your PATH, since it just uses whichever `python` is currently active.
+Note:
 - Don't use `--reload` on Windows — it can crash with a multiprocessing permission error.
-  Restart the process manually after making code changes instead.
 
 ### 4. Try it
 
-Upload any file from `samples/` (three transcripts covering different companies, currencies,
-and PII mixes).
+Upload any file from `samples/` (three transcripts covering different companies currencies, and PII mixes).
 
 ## Environment variables
 
-| `GROQ_API_KEY` | Authenticates with Groq's API. Never committed — read from the environment only (see `redaction/groq_client.py`). |
+`GROQ_API_KEY` - Authenticates with Groq's API. 
+
 No other secrets are required. There is no database, no external storage, and no other third-party service in this app.
 
 See `ARCHITECTURE.md` for the tech stack, redaction strategy, and API used.
