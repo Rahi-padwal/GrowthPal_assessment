@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Transcript Redaction Portal</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <main>
+    <h1>Redact call transcripts in seconds</h1>
+    <p class="subtitle">
+      Upload a call transcript to get a redacted version, a summary, and an audit log of
+      every flagged entity.
+    </p>
+
+    <div id="dropzone" class="dropzone">
+      <input type="file" id="file-input" accept=".txt,.docx,.pdf" hidden />
+      <button type="button" id="select-btn" class="cta-btn">Select transcript file</button>
+      <p class="drop-hint">or drop a .txt, .docx, or .pdf transcript here</p>
+    </div>
+
+    <div id="status"></div>
+
+    <section id="results" hidden>
+      <div class="panel">
+        <h2>Redacted Transcript</h2>
+        <pre id="redacted-text"></pre>
+      </div>
+
+      <div class="panel">
+        <h2>Summary</h2>
+        <p id="summary"></p>
+      </div>
+
+      <div class="panel">
+        <h2>Key Points</h2>
+        <ul id="key-points"></ul>
+      </div>
+
+      <div class="panel">
+        <h2>Audit Log <span id="audit-count" class="badge"></span></h2>
+        <table id="audit-table">
+          <thead>
+            <tr>
+              <th>Type</th>
+              <th>Flagged Text</th>
+              <th>Placeholder</th>
+              <th>Reason</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

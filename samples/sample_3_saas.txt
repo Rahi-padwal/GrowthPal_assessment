@@ -1,0 +1,30 @@
+Call recording — Northstar Capital × PixelForge Studios Inc.
+19 June 2024, 11:00 IST | Duration: 33 min
+
+Analyst (Rohan Verma): Hi, Rohan Verma here from Northstar Capital. Good to connect.
+
+CEO (Meera Iyer): Hi Rohan, I'm Meera Iyer, CEO of PixelForge Studios. Happy to walk you through things.
+
+Analyst: Let's talk product usage first — how many active studios are on the platform now?
+
+CEO: We're at just over 1,200 active studios, up nicely from last quarter. Most of that growth came organically from word of mouth in the indie game dev community.
+
+Analyst: And the commercial side?
+
+CEO: ARR is at $3.2 million, up from $2.4 million last year. Our net revenue retention is 118%.
+
+Analyst: What's the team size and burn look like?
+
+CEO: We're a team of 41, spread across Austin and Lisbon. Monthly burn is about $180,000, giving us roughly 24 months of runway.
+
+Analyst: Any partnerships worth flagging?
+
+CEO: Yes — we recently integrated with CloudRender Labs for GPU rendering, and we're in early talks with a much larger studio, Vantage Interactive, about a potential distribution deal.
+
+Analyst: Any pending disputes?
+
+CEO: One thing — a former contractor is disputing IP ownership on an early plugin. Our outside counsel, Daniel Ford at Ford & Whitman LLP, expects a resolution within the quarter. We don't expect material exposure beyond legal fees.
+
+Analyst: Understood. I'll circle back once we've reviewed the data room.
+
+CEO: Sounds good. Reach me at meera@pixelforgestudios.io if anything comes up.
