@@ -6,7 +6,7 @@
 
 ```bash
 python -m venv .venv
-.venv\Scripts\Activate.ps1      # Windows PowerShell
+.venv\Scripts\Activate.ps1      # Windows
 # source .venv/bin/activate      # macOS/Linux
 
 pip install -r requirements.txt
@@ -25,7 +25,6 @@ cp .env.example .env
 GROQ_API_KEY=your-groq-api-key-here
 ```
 
-The app loads `.env` automatically at startup (via `python-dotenv`) — no manual export needed.
 
 ### 3. Run
 
@@ -48,13 +47,7 @@ and PII mixes).
 
 ## Environment variables
 
-| Variable | Required | Purpose |
-|---|---|---|
-| `GROQ_API_KEY` | Yes | Authenticates with Groq's API. Never committed — read from the environment only (see `redaction/groq_client.py`). |
-| `GROQ_MODEL` | No | Overrides the default model (`llama-3.3-70b-versatile`). |
+| `GROQ_API_KEY` | Authenticates with Groq's API. Never committed — read from the environment only (see `redaction/groq_client.py`). |
+No other secrets are required. There is no database, no external storage, and no other third-party service in this app.
 
-No other secrets are required. There is no database, no external storage, and no other
-third-party service in this app.
-
-See `ARCHITECTURE.md` for the tech stack rationale, redaction strategy, and guardrail
-compliance notes.
+See `ARCHITECTURE.md` for the tech stack, redaction strategy, and API used.
